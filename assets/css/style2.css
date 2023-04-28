@@ -1,0 +1,251 @@
+/* universal styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Blorado, sans-serif;
+    text-rendering: geometricprecision;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* header and navbar elements */
+header {
+    padding: 20px;
+    font-family: Blorado, sans-serif;
+}
+
+header h1 {
+    display: flex;
+    padding-top: 15px;
+    margin-left: 20px;
+    float: left;
+    font-family: Blorado, sans-serif;
+    font-size: 30px;
+}
+
+header nav {
+    display: inline-flex;
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: Blorado, sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* end header and navbar elements */
+
+/* styles for informational content */
+main {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* mutant PFP avatar */
+.avatar {
+    height: 150px;
+    width: 150px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 90px;
+}
+
+/* START ANIMATED STYLE */
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-weight: 800;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+    stroke: #4D163D;
+    animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+    stroke: #840037;
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+    stroke: #BD0034;
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+    stroke: #BD0034;
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+    stroke: #FDB731;
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -35%;
+    }
+}
+
+/* END ANIMATED STYLE */
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* styles for about me section */
+.about {
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border: solid 1px;
+    border-color: grey;
+}
+
+.about-me {
+    font-size: 38px;
+}
+
+/* end about me styles */
+
+/* styles for work section */
+.work {
+    display: flexbox;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.work-container {
+    position: relative;
+}
+
+.work h2 {
+    justify-content: center;
+    font-size: 38px;
+}
+
+.work ul {
+    margin-bottom: 20px;
+}
+
+.text-block {
+    color: white;
+}
+
+.work-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work ul li img {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+/* end styles for work section */
+
+a {
+    text-decoration: none;
+}
+
+/* .ten-tails-sharingan {
+    flex: 2 1 200px;
+    height: 400px;
+    width: 400px;
+} */
+
+.TTS {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.TTS img {
+    height: 600px;
+    width: 80%;
+    padding: 20px;
+}
+
+.TTS h2 {
+    font-size: 38px;
+    padding: 20px;
+}
+
+/* #ten-tails {
+    height: 400px;
+    width: 400px;
+} */
+
+/* call to action contact section */
+.contact h3 {
+    font-size: 38px;
+}
+
+@media screen and (max-width: 800px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    header,
+    .about,
+    .work,
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+    }
+    .animated-name {
+        width: 300px;
+    }
+}
+
+footer {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
